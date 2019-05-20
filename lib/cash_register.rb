@@ -17,7 +17,7 @@ class CashRegister
     @items << item_desc
 
     @total += price * quantity
-    @last_transaction = @total # set a value to last_transaction from total for void_last_transaction setup
+    self.last_transaction = @total # set a value to last_transaction from total for void_last_transaction setup
   end
 
   def apply_discount
